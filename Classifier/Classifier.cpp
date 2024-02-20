@@ -2,11 +2,7 @@
 //
 
 #include "Classifier.h"
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
-#include <boost/beast/version.hpp>
-#include <boost/asio.hpp>
-#include <boost/filesystem.hpp>
+
 
 using namespace std;
 
@@ -165,6 +161,10 @@ private:
                 << "<html>\n"
                 << "<head><title>Classify</title></head>\n"
                 << "<body>\n"
+                << "<h1>Classify</h1>\n"
+                << "<p>Doing a classify at "
+                << my_program_state::now()
+                << " seconds since the epoch.</p>\n"
                 << "</body>\n"
                 << "</html>\n";
         }
